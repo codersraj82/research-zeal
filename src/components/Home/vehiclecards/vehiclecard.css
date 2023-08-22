@@ -1,0 +1,14 @@
+.card {
+  --bs-card-height: auto !important;
+  width: 50%;
+  --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-title-color: rgb(9, 9, 146);
+  --bs-card-subtitle-color: rgb(41, 6, 6);
+  --bs-card-border-width: 00.05rem;
+  --bs-card-border-color: rgba(37, 37, 37, 0.911);
+}
+
+.card-img-top {
+  height: 50%;
+  width: auto;
+}

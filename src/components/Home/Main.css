@@ -1,0 +1,17 @@
+.homecmp {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem 0 0 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .homecmp {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+    gap: 2rem;
+    margin: 2rem;
+  }
+}

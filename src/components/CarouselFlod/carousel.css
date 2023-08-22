@@ -1,0 +1,58 @@
+.mycarousel {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.mycarousel > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.first {
+  opacity: 1;
+}
+
+.mycaro-btn {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translate(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mycaro-btn:hover .mycaro-btn:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.mycaro-btn:focus {
+  outline: 1px solid black;
+}
+
+.mycaro-btn.prev {
+  left: 1rem;
+}
+.mycaro-btn.next {
+  right: 1rem;
+}
