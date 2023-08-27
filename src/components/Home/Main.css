@@ -1,17 +1,25 @@
-.homecmp {
-  display: grid;
+/* .home-carousel {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
+} */
+.card-container {
+  display: flex;
+  justify-content: center;
+
+  width: 100vw;
+  height: auto;
   gap: 2rem;
-  margin: 2rem 0 0 2rem;
 }
 
-@media only screen and (max-width: 600px) {
-  .homecmp {
-    display: grid;
-    width: 100%;
-    grid-template-columns: auto;
-    gap: 2rem;
-    margin: 2rem;
+@media screen and (max-width: 600px) {
+  .card-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
   }
 }

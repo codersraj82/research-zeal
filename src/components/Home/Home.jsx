@@ -1,21 +1,23 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-import MainCarousel from "../CarouselFlod/MainCarosoule";
-import HondaBrv from "./vehiclecards/HondaBrv";
-import "../Home/Main.css";
-import "./vehiclecards/vehiclecard.css";
+//Carousel//
 import Carousel from "../CarouselFlod/carousel";
+import { carouselData } from "../CarouselFlod/carouselData";
+//Cards//
+import Cards from "../cards/cards";
+import { cardData } from "../cards/cardData";
+
+import "../Home/Main.css";
 
 function Home() {
   return (
     <>
       {/* <MainCarousel /> */}
-      <Carousel />
-      <div class="homecmp">
-        <HondaBrv className="hondaimg" />
-        <HondaBrv />
-        <HondaBrv />
+      <div className="home-carousel">
+        <Carousel slides={carouselData} />
+      </div>
+      <div className="card-container">
+        <Cards cardData={cardData} />
       </div>
     </>
   );
