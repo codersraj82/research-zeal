@@ -1,6 +1,7 @@
 import React from "react";
 import "./cards.css";
 import "./cardData";
+import { Link } from "react-router-dom";
 
 const Cards = ({ cardData }) => {
   console.log(cardData);
@@ -22,7 +23,9 @@ const Cards = ({ cardData }) => {
               <img src={card.img} alt="" className="car-image" />
               <h5 className="card-title">{card.title}</h5>
               <div className="profile-container">
-                <img src={card.profile} alt="" className="profile-photo" />
+                <div className="profile-pic">
+                  <img src={card.profile} alt="" className="profile-photo" />
+                </div>
                 <div>
                   <h6 className="profile-name">{card.name}</h6>
                   <p>{`
@@ -36,10 +39,27 @@ const Cards = ({ cardData }) => {
               `}</p>
                 </div>
               </div>
-
-              <p className="card-description">{card.description}</p>
+              <div className="description-body">
+                <p className="card-description">{card.description}</p>
+              </div>
             </div>
-            <button className="card-button"> Contact us</button>
+            <div className="button-container">
+              <div className="whatsapp-container">
+                <a href="https://wa.me/+919423857070">
+                  <img
+                    src="../../images/whatsapp.png"
+                    alt=""
+                    className="whatsapp-button"
+                  />
+                </a>
+              </div>
+
+              <div>
+                <Link to="/contact">
+                  <button className="contact-button">Contact us</button>
+                </Link>
+              </div>
+            </div>
           </div>
         );
       })}

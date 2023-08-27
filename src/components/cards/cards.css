@@ -5,9 +5,26 @@
   flex-direction: column;
   border: 0.05rem solid black;
   border-radius: 0.5rem;
-  width: 250px;
-  height: Auto;
+  width: 350px;
+  height: auto;
   gap: 1rem;
+}
+.description-body {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 15vh;
+}
+.description-body::-webkit-scrollbar {
+  width: 1em;
+}
+
+.description-body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(4, 73, 151, 0.3);
+}
+
+.description-body::-webkit-scrollbar-thumb {
+  background-color: rgb(74, 134, 245);
+  outline: 1px solid rgba(112, 128, 144, 0.404);
 }
 
 .card:hover {
@@ -20,12 +37,11 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow: auto;
 }
 .car-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   margin: 0;
   padding: 0;
 }
@@ -36,15 +52,23 @@
 }
 .profile-container {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  margin-bottom: 1rem;
+  width: 100%;
+  height: 50%;
+  gap: 1rem;
+  margin: 0 1rem 0 0.5rem;
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: relative;
 }
 .profile-photo {
-  border-radius: 50%;
-  width: 50%;
+  width: 100%;
   height: 100%;
-  margin: 0 0.25rem 0 0.25rem;
+  position: absolute;
+  object-fit: fill;
 }
 .profile-name {
   font-size: large;
@@ -69,19 +93,34 @@
   color: rgb(7, 7, 190);
   font-size: 15px;
 }
+.button-container {
+  padding: 0;
+  margin: 0;
+}
+.whatsapp-container {
+  padding: 0;
+  margin: 0;
+}
+.whatsapp-button {
+  color: rgb(32, 12, 216);
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  object-fit: fill;
+}
 
-.card > button {
+.contact-button {
   color: rgb(32, 12, 216);
   font-size: 1.5rem;
-  margin: 1rem;
-  border-radius: 2rem;
+  width: 50%;
+  padding: 0 1rem;
+
+  width: 100%;
   border: 0.02rem solid rgb(32, 12, 216);
 }
 
-.card > button:hover {
+.contact-button:hover {
   background-color: rgb(50, 50, 250);
   color: beige;
-  margin: 1rem;
-  border-radius: 2rem;
   border: none;
 }
