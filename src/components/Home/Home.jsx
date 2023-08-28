@@ -8,6 +8,7 @@ import Cards from "../cards/cards";
 import { cardData } from "../cards/cardData";
 
 import "../Home/Main.css";
+import Navbar from "../navbar/Navbar";
 
 function Home() {
   return (
