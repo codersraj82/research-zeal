@@ -8,7 +8,7 @@ export const carouselData = [
     title: "Sporty Look and Luxury car!!",
   },
   {
-    image: "./images/FullcarImage.jpg",
-    title: "Spacious 7-seaer car",
+    image: "./images/Scorpio.jpg",
+    title: "Scorpio for your dream travel",
   },
 ];

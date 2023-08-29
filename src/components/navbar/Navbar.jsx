@@ -23,20 +23,14 @@ const Navbar = () => {
         />
       </button>
       <ul className="menus" id={showMenu ? "hidden" : ""}>
-        <li className="active">
-          <Link to="/" activeClassName="active">
-            Home
-          </Link>
+        <li className="active-page">
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/about" activeClassName="active">
-            About us
-          </Link>
+          <Link to="/about">About us</Link>
         </li>
         <li>
-          <Link to="/contact" activeClassName="active">
-            Contact
-          </Link>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
       <div className="search-container">
