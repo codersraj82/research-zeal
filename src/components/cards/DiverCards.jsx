@@ -1,22 +1,27 @@
 import React from "react";
 import "./cards.css";
-import "./cardData";
+import "./driverData";
 import { Link } from "react-router-dom";
 
-const Cards = ({ cardData }) => {
-  console.log(cardData);
+const DriverCards = ({ driverData }) => {
+  console.log(driverData);
 
   return (
     <>
-      {cardData.map((card, index) => {
+      {driverData.map((card, index) => {
         return (
           <div className="card" key={index}>
             <div className="card-body">
-              <img src={card.img} alt="" className="car-image" loading="lazy" />
+              <img src={card.img} alt="" className="car-image" />
               <h5 className="card-title">{card.title}</h5>
               <div className="profile-container">
                 <div className="profile-pic">
-                  <img src={card.profile} alt="" className="profile-photo" />
+                  <img
+                    src={card.profile}
+                    alt=""
+                    className="profile-photo"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="Prof-conatiner">
                   <h6 className="profile-name">{card.name}</h6>
@@ -59,4 +64,4 @@ const Cards = ({ cardData }) => {
   );
 };
 
-export default Cards;
+export default DriverCards;

@@ -2,55 +2,69 @@
   display: flex;
   /* flex: 20%; */
   width: 100vw;
+  height: 10vh;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   background-color: rgb(39, 38, 38);
   color: beige;
   padding: 0 1rem;
   margin: 0;
   gap: 2rem;
-  position: relative;
 }
-.navbar a {
+.slide-title {
   text-decoration: none;
   color: inherit;
 }
 .menus {
   flex: 40%;
   display: flex;
+  width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 1rem;
   color: bisque;
-  padding: 0;
-  margin: 0;
   list-style: none;
   font-size: large;
-  position: relative;
-}
-.menus li:hover {
-  display: flex;
-  align-items: center;
-  background-color: rgb(184, 104, 6);
-  height: 100%;
+  background-color: inherit;
 }
 
-li > a {
-  text-decoration: none !important;
-  color: inherit;
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  align-content: center;
+  gap: 3rem;
+  text-align: center;
+}
+li a {
+  display: inline-block;
+  text-decoration: none;
+  color: whitesmoke;
+  text-align: center;
+}
+li a:hover {
+  background-color: rgb(139, 136, 133);
+
+  height: 100%;
+  width: 100%;
+  color: bisque;
+
+  justify-content: center;
+}
+li a:focus {
+  color: rgb(184, 104, 6);
 }
 
 .search-container {
-  position: absolute;
-  top: 1rem;
-  left: 80vw;
-
-  flex: 40%;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex: 30%;
+  width: 100%;
 }
-
+.searchbar {
+  width: 10rem;
+}
 .search-button {
   display: none;
 }
@@ -67,7 +81,7 @@ li > a {
     flex-direction: column;
     position: fixed;
     left: 85vw;
-    top: 0.5vh;
+    top: 1.5vh;
     margin: 0.25rem 0 1rem 0;
     background-color: rgb(39, 38, 38);
     border: 2px solid whitesmoke;
@@ -82,10 +96,11 @@ li > a {
     flex-direction: column;
     justify-content: flex-end;
     position: absolute;
-    top: 5vh;
+    top: 10vh;
     width: 100%;
+    height: 40vh;
     background-color: rgb(39, 38, 38);
-    z-index: 3;
+    z-index: 4;
     margin: 0 0 0.5rem 0;
     padding: 2rem 0 0 0;
     left: 0;

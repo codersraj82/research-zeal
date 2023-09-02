@@ -8,6 +8,8 @@ import Home from "../src/components/Home/Home";
 import About from "../src/components/AboutMe/About";
 import Contact from "../src/components/ContactMe/Contact";
 import Navbar from "./components/navbar/Navbar";
+import HireCar from "./components/Hirecar-pages/Hire-car";
+import HireDriver from "./components/HireDriver-page/HireDriver";
 
 // import the library
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -28,6 +30,8 @@ function App() {
           <Route path="/about" element={<About />} />
 
           <Route path="/contact" element={<Contact />} />
+          <Route path="/hire-car" element={<HireCar />} />
+          <Route path="/hire-driver" element={<HireDriver />} />
         </Routes>
       </div>
     </div>
