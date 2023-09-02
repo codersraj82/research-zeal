@@ -1,5 +1,5 @@
 .card {
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 5rem 0.5rem;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -9,6 +9,7 @@
   height: auto;
   gap: 1rem;
 }
+
 .description-body {
   overflow: scroll;
   overflow-x: hidden;
